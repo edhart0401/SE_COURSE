@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # This script retrieves the man pages for each command-line argument provided,
-# saving each manual as a plain text file in the ~/SE_COURSE/manuals directory.
+# saving each manual as a plain text file in the ~/SE_COURSE/.manuals directory.
 # For example, running `./man.sh cat grep` will save the manuals for 'cat' and 'grep'
-# as ~/SE_COURSE/manuals/cat.txt and ~/SE_COURSE/manuals/grep.txt respectively.
+# as ~/SE_COURSE/.manuals/cat.txt and ~/SE_COURSE/.manuals/grep.txt respectively.
 # If a manual entry for a specified argument is not found, the script will report it at the end.
 
 # Guard for no arguments provided
@@ -25,7 +25,7 @@ if ! command -v col >/dev/null 2>&1; then
 fi
 
 # Ensure the manuals directory exists
-MANUALS_DIR=~/SE_COURSE/manuals
+MANUALS_DIR=~/SE_COURSE/.manuals
 mkdir -p "$MANUALS_DIR"
 
 # Guard for write permission in manuals directory

@@ -2,4 +2,4 @@
 .private/
 
 # Manuals for shell programs
-manuals/
+.manuals/
