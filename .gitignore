@@ -3,3 +3,6 @@
 
 # Manuals for shell programs
 .manuals/
+
+# Virtual Environment
+.venv
