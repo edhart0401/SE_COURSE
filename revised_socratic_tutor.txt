@@ -1,14 +1,9 @@
-Act as a senior software-engineering tutor. I'm working through MIT's Missing Semester course.
+SE_COURSE tutor guidance has moved.
 
-Use the Socratic method:
-- Ask **one question at a time**.
-- Don't immediately give me answers. Challenge my mental model, identify contradictions, and make me justify my reasoning.
-- If I'm stuck, provide the smallest useful hint, increasing its specificity if necessary.
-- Prioritise **conceptual understanding and engineering judgement** over memorising CLI syntax.
-- Stay within the scope of the lecture unless an adjacent concept is essential to understanding it.
-- For practical exercises, give more explicit command hints when needed so I don't waste time looking up syntax.
-- Distinguish between conceptual mistakes and minor syntax errors.
-- Don't repeatedly test concepts I've already demonstrated that I understand.
-- At the end, grade my understanding, identify weaknesses, and recommend concepts to revisit.
+Read AGENTS.md at the repository root, then tutor/README.md for the canonical
+teaching contract, mode controls, assessment restrictions and current limits.
 
-I'll provide the lecture URL first. Help me consolidate the material before moving on to its exercises.
+The contract covers the full M0–M10 curriculum, continuous laboratory, capstone
+and system-design practicum. MIT's Missing Semester is a resource within that
+programme, not its complete scope. This file is a compatibility pointer and
+does not define a separate teaching contract.

@@ -1,13 +1,13 @@
 # Persistent AI tutor: implementation roadmap
 
 Date: 27 October 2026  
-Status: planning document; implementation has not started.
+Status: Phase 1 complete with documented verification limitations, 28 October 2026. Later phases have not started.
 
 ## Purpose and authority
 
 Build the smallest reliable system that preserves learning history, supports evidence-based Socratic teaching, and resumes coherently across Codex IDE and CLI sessions. The tutor is supporting infrastructure for SE_COURSE, not a replacement for its continuous laboratory or capstone.
 
-This roadmap records the architecture discussed after read-only discovery of the repository. The user has authorised writing this roadmap and placing its source brief in `docs/roadmap/` and intends to start Phase 1 in a different session. Creating this document does not start implementation, approve historical assessments, or authorise uploading private data. Do not automatically advance phases merely because this file exists.
+This roadmap records the architecture discussed after read-only discovery of the repository. The user originally authorised writing this roadmap and placing its source brief in `docs/roadmap/`; Phase 1 was subsequently authorised, implemented and closed as recorded below. Creating this document does not start implementation, approve historical assessments, or authorise uploading private data. Do not automatically advance phases merely because this file exists.
 
 Read these sources when implementing:
 
@@ -303,16 +303,20 @@ No automatic commits, pushes, uploads, dependency installations or IDE changes a
 | --- | --- | --- |
 | Discovery (original brief Phase 1) | Complete | Read-only repository/syllabus/export-structure findings recorded above; no historical assessment performed |
 | Roadmap preparation | Complete | This document and relocated source brief; no implementation files introduced |
-| 1. Tutor contract | Pending | Start in a separate session at the user's request |
+| 1. Tutor contract | Complete with documented verification limitations, 28 October 2026 | [Implementation review](phase_1_implementation_review.md): original CLI/IDE multi-turn results, metadata supplements and separate CLI attribution retest; retained Partial attribution results and unverified discovery/runtime details |
 | 2. Curriculum/state | Pending | Depends on Phase 1 |
 | 3. Basic continuity | Pending | Depends on Phase 2 |
 | 4. Inventory/ingestion | Pending | Depends on storage/review workflow |
 | 5. Reconstruction | Pending | Depends on approved history |
 | 6. Retrieval | Pending | Depends on selective store |
 
-Suggested next-session instruction:
+Phase 1 execution, 27 October 2026: added root contract, operating README and architectural decision with implementation notes; replaced legacy tutor guidance with a compatibility pointer. Added the user-requested [implementation review](phase_1_implementation_review.md). Verified fresh read-only CLI startup and synthetic Tutor/Closed-book/conflicting-switch/post-attempt-review/end-session cases in separate invocations. No private history, coursework or IDE settings changed. At that handoff, fresh IDE discovery and full multi-turn checks remained unverified. Subsequent evidence and closure are recorded below. No later phase started.
 
-> Read `docs/roadmap/tutor_implementation_roadmap.md` and `docs/roadmap/base_prompt.md`. Start Phase 1 of the roadmap in Engineering Mode for tutor infrastructure. Recheck applicable instructions and Git state, implement the tutor contract within its stated scope, and verify what can be verified in both Codex clients. Do not start later phases, solve coursework, ingest private conversations, or invent progress. Report changed files, actual validation and any manual checks still needed.
+Phase 1 closure, 28 October 2026: reviewed original seven-step CLI and IDE conversation records, follow-up metadata supplements and a separate focused CLI attribution retest. Both original chat documentation tasks passed. The CLI original and retest attribution results remain Partial for different explicit-attribution omissions; no independent corrected understanding was claimed. Original-session metadata remains incomplete, fresh-client discovery is not independently verified by the manual records, and runtime enforcement/file-write capability was not tested. These limitations are retained in the implementation review. The user explicitly authorised closing Phase 1 with documented verification limitations; no further rerun or Phase 1 feature work is required for closure. This does not mark all checks passed or establish learner progress.
+
+Next-session handoff after Phase 1 closure:
+
+> Read `AGENTS.md`, `tutor/README.md`, this roadmap and `docs/roadmap/phase_1_implementation_review.md`. Phase 1 is complete with documented verification limitations; preserve its original and retest results. Phase 2 remains pending explicit authorisation. If authorised, implement only Phase 2's curriculum catalogue and validated learning-state storage scope, rechecking Git state and preserving existing work. Do not start session continuity, ingest private history, solve coursework or invent learner progress as part of that work.
 
 ## Roadmap consistency review
 
@@ -326,4 +330,4 @@ Reviewed against the design brief and architecture discussion during drafting an
 - Parent-linked branches, repeat imports, provenance, uncertainty and assessment review are covered.
 - Both IDE and CLI need actual continuation checks; instructions are not described as automatic executable hooks.
 - Optional advanced features remain outside the MVP.
-- The documentation changes cover this roadmap and relocation of the source brief into `docs/roadmap/`; Phase 1 remains pending.
+- The original roadmap preparation covered this document and relocation of the source brief. Phase 1 has since been completed with documented verification limitations; its execution and closure are recorded above and in the linked review.
